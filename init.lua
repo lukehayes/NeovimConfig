@@ -4,3 +4,8 @@ require("plugin-init")
 -- Options like cursorline, colorscheme etc
 require("core.options")
 
+-- Plugin Settings
+-- 
+require("plugins.nvim-tree")
+
+
