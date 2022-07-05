@@ -4,5 +4,14 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
-    use "EdenEast/nightfox.nvim" -- Packer
+
+    -- Nightfox colorscheme
+    use "EdenEast/nightfox.nvim"
+
+    -- Catppuccin colorscheme
+    use({
+        "catppuccin/nvim",
+        as = "catppuccin"
+    })
+
 end)
