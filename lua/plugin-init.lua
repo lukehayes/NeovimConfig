@@ -4,5 +4,5 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
-    print("Packer Setup")
+    use "EdenEast/nightfox.nvim" -- Packer
 end)
