@@ -14,4 +14,7 @@ return require('packer').startup(function()
         as = "catppuccin"
     })
 
+    -- Nvim Tree
+    use { 'kyazdani42/nvim-tree.lua' }
+
 end)
