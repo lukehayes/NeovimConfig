@@ -11,5 +11,6 @@ require("core.key-bindings")
 -- Plugin Settings
 -- 
 require("plugins.nvim-tree")
+require("plugins.zen-mode")
 
 
