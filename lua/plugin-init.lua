@@ -22,4 +22,7 @@ return require('packer').startup(function()
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+
+    -- Neoformat (Use uncrustify, installed with pacman/aur for C/C++)
+    use { 'sbdchd/neoformat' }
 end)
