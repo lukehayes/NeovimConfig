@@ -25,4 +25,7 @@ return require('packer').startup(function()
 
     -- Neoformat (Use uncrustify, installed with pacman/aur for C/C++)
     use { 'sbdchd/neoformat' }
+
+    -- Vim Fugitive
+    use { 'tpope/vim-fugitive' }
 end)
