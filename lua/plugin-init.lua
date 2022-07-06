@@ -17,4 +17,9 @@ return require('packer').startup(function()
     -- Nvim Tree
     use { 'kyazdani42/nvim-tree.lua' }
 
+    -- Telescope
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
 end)
