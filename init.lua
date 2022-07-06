@@ -1,3 +1,5 @@
+vim.g.mapleader = "'"
+
 -- Initialize Packer
 require("plugin-init")
 
