@@ -1,8 +1,10 @@
 -- Initialize Packer
 require("plugin-init")
 
--- Options like cursorline, colorscheme etc
+-- Options
+-- 
 require("core.options")
+require("core.key-bindings")
 
 -- Plugin Settings
 -- 
