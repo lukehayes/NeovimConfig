@@ -8,3 +8,5 @@ vim.keymap.set('n', '<Leader>lg', ':Telescope live_grep<CR>')
 
 vim.keymap.set('n', '<Leader>gg', ':Git commit -m ""<left>')
 
+vim.keymap.set('', '<Leader>o', ':BufExplorer<CR>')
+

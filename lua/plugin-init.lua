@@ -28,6 +28,10 @@ return require('packer').startup(function()
 
     -- Vim Fugitive
     use { 'tpope/vim-fugitive' }
+
+    -- BufExplorer
+    use { 'jlanzarotta/bufexplorer' }
+
     -- Zen Mode
     use {
         "folke/zen-mode.nvim",
