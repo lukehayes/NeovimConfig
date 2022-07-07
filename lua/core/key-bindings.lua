@@ -10,3 +10,5 @@ vim.keymap.set('n', '<Leader>gg', ':Git commit -m ""<left>')
 
 vim.keymap.set('', '<Leader>o', ':BufExplorer<CR>')
 
+vim.keymap.set('', '<Leader>bd', ':BClose<CR>')
+
