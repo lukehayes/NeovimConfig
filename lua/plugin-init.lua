@@ -43,4 +43,10 @@ return require('packer').startup(function()
             }
         end
     }
+
+    -- NerdCommenter
+    use 'scrooloose/nerdcommenter'
+
+    -- Ultisnips
+    use 'sirver/ultisnips'
 end)
