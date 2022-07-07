@@ -48,5 +48,5 @@ return require('packer').startup(function()
     use 'scrooloose/nerdcommenter'
 
     -- Ultisnips
-    use 'sirver/ultisnips'
+    --use 'sirver/ultisnips'
 end)
