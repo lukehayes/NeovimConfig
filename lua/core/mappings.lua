@@ -11,10 +11,11 @@ vim.keymap.set('n', '<Leader>lg', ':Telescope live_grep<CR>')
 
 -- Vim FuGITive
 vim.keymap.set('n', '<Leader>gg', ':Git commit -m ""<left>')
+vim.keymap.set('n', '<Leader>g',  ':G<CR>')
 
 -- BufExplorer
-vim.keymap.set('', '<Leader>o', ':BufExplorer<CR>')
-vim.keymap.set('', '<Leader>bd', ':BClose<CR>')
+vim.keymap.set('', '<Leader>o',   ':BufExplorer<CR>')
+vim.keymap.set('', '<Leader>bd',  ':Bclose<CR>')
 
 -- Movement
 --
