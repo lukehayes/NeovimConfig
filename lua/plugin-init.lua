@@ -47,6 +47,9 @@ return require('packer').startup(function()
     -- NerdCommenter
     use 'scrooloose/nerdcommenter'
 
+    -- Indent Blankline
+    use 'lukas-reineke/indent-blankline.nvim'
+
     -- Ultisnips
     --use 'sirver/ultisnips'
 end)

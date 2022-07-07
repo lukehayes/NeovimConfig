@@ -41,6 +41,7 @@ require("core.mappings")
 -- 
 require("plugins.nvim-tree")
 require("plugins.zen-mode")
+require("plugins.indent-blankline")
 
 -- Set Python path explicitly for ultisnips - saves having to install neovim through pip
 -- or having to build neovim with Python support.
