@@ -25,6 +25,9 @@ vim.keymap.set('n', '<C-j>', '<C-w>j>', opts)
 vim.keymap.set('n', '<C-k>', '<C-w>k>', opts)
 vim.keymap.set('n', '<C-l>', '<C-w>l>', opts)
 
+-- Remap : to space
+vim.keymap.set('n', '<SPACE>', ':')
+
 -- Open and close brackets
 local opts = { noremap = true }
 vim.keymap.set('i', '(', '()<Esc>i', opts)
