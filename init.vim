@@ -26,7 +26,7 @@ endfunction
 " All other config is written in Lua and starts below.
 "
 lua << EOF
-vim.g.mapleader = " "
+vim.g.mapleader = "'"
 
 -- Initialize Packer
 -- 
