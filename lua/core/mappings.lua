@@ -17,16 +17,19 @@ vim.keymap.set('', '<Leader>o', ':BufExplorer<CR>')
 vim.keymap.set('', '<Leader>bd', ':BClose<CR>')
 
 -- Movement
-vim.keymap.set('n', '<C-h>', '<C-w>h>', {noremap = true, silent = true})
-vim.keymap.set('n', '<C-j>', '<C-w>j>', {noremap = true, silent = true})
-vim.keymap.set('n', '<C-k>', '<C-w>k>', {noremap = true, silent = true})
-vim.keymap.set('n', '<C-l>', '<C-w>l>', {noremap = true, silent = true})
+--
+local opts = { noremap = true, silent = true }
+vim.keymap.set('n', '<C-h>', '<C-w>h>', opts)
+vim.keymap.set('n', '<C-j>', '<C-w>j>', opts)
+vim.keymap.set('n', '<C-k>', '<C-w>k>', opts)
+vim.keymap.set('n', '<C-l>', '<C-w>l>', opts)
 
 -- Open and close brackets
-vim.keymap.set('i', '(', '()<Esc>i', {noremap = true})
-vim.keymap.set('i', '{', '{}<Esc>i', {noremap = true})
-vim.keymap.set('i', '{<CR<>', '{<CR>}<Esc>O', {noremap = true})
-vim.keymap.set('i', '[', '[]<Esc>i', {noremap = true})
-vim.keymap.set('i', '<', '<><Esc>i', {noremap = true})
-vim.keymap.set('i', "'", "''<Esc>i", {noremap = true})
-vim.keymap.set('i', '"', '""<Esc>i', {noremap = true})
+local opts = { noremap = true }
+vim.keymap.set('i', '(', '()<Esc>i', opts)
+vim.keymap.set('i', '{', '{}<Esc>i', opts)
+vim.keymap.set('i', '{<CR<>', '{<CR>}<Esc>O', opts)
+vim.keymap.set('i', '[', '[]<Esc>i', opts)
+vim.keymap.set('i', '<', '<><Esc>i', opts)
+vim.keymap.set('i', "'", "''<Esc>i", opts)
+vim.keymap.set('i', '"', '""<Esc>i', opts)
