@@ -1,15 +1,19 @@
 
+-- NvimTree
 vim.keymap.set('n', '<Leader>nn', ':NvimTreeToggle<CR>')
 
+-- Colorscheme
 vim.keymap.set('n', '<Leader>as', ':colorscheme ')
 
+-- Telescope
 vim.keymap.set('n', '<Leader>ff', ':Telescope find_files<CR>')
 vim.keymap.set('n', '<Leader>lg', ':Telescope live_grep<CR>')
 
+-- Vim FuGITive
 vim.keymap.set('n', '<Leader>gg', ':Git commit -m ""<left>')
 
+-- BufExplorer
 vim.keymap.set('', '<Leader>o', ':BufExplorer<CR>')
-
 vim.keymap.set('', '<Leader>bd', ':BClose<CR>')
 
 -- Movement
