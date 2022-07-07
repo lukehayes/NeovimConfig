@@ -10,7 +10,7 @@ vim.keymap.set('n', '<Leader>ff', ':Telescope find_files<CR>')
 vim.keymap.set('n', '<Leader>lg', ':Telescope live_grep<CR>')
 
 -- Vim FuGITive
-vim.keymap.set('n', '<Leader>co', ':Git commit -m ""<left>')
+vim.keymap.set('n', '<Leader>co', ':Git commit -m ""<LEFT>')
 vim.keymap.set('n', '<Leader>g',  ':G<CR>')
 
 -- BufExplorer
