@@ -6,7 +6,7 @@ require("plugin-init")
 -- Options
 -- 
 require("core.options")
-require("core.key-bindings")
+require("core.mappings")
 
 -- Plugin Settings
 -- 
