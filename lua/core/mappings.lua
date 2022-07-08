@@ -28,6 +28,9 @@ vim.keymap.set('n', '<C-l>', '<C-w>l>', opts)
 -- Remap : to space
 vim.keymap.set('n', '<SPACE>', ':')
 
+-- Shortcut for :noh
+vim.keymap.set('n', '<leader><CR>', ':noh<CR>')
+
 -- Open and close brackets
 local opts = { noremap = true }
 vim.keymap.set('i', '(', '()<Esc>i', opts)
