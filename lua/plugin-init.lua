@@ -5,15 +5,26 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
-    -- Nightfox colorscheme
+	-- Colorschemes	
+	-- 
+    -- Nightfox 
     use "EdenEast/nightfox.nvim"
 
-    -- Catppuccin colorscheme
+    -- Catppuccin 
     use({
         "catppuccin/nvim",
         as = "catppuccin"
     })
 
+    -- Gotham
+	use 'whatyouhide/vim-gotham'
+
+    -- Gruvbox
+	use 'gruvbox-community/gruvbox'
+
+
+	-- Functionality	
+	-- 
     -- Nvim Tree
     use { 'kyazdani42/nvim-tree.lua' }
 
