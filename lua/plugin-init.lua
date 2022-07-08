@@ -8,12 +8,12 @@ return require('packer').startup(function()
 	-- Colorschemes	
 	-- 
     -- Nightfox 
-    use "EdenEast/nightfox.nvim"
+    use 'EdenEast/nightfox.nvim'
 
     -- Catppuccin 
     use({
-        "catppuccin/nvim",
-        as = "catppuccin"
+        'catppuccin/nvim',
+        as = 'catppuccin'
     })
 
     -- Gotham
@@ -26,7 +26,7 @@ return require('packer').startup(function()
 	-- Functionality	
 	-- 
     -- Nvim Tree
-    use { 'kyazdani42/nvim-tree.lua' }
+    use 'kyazdani42/nvim-tree.lua'
 
     -- Telescope
     use {
@@ -35,22 +35,27 @@ return require('packer').startup(function()
     }
 
     -- Neoformat (Use uncrustify, installed with pacman/aur for C/C++)
-    use { 'sbdchd/neoformat' }
+    use 'sbdchd/neoformat'
 
     -- Vim Fugitive
-    use { 'tpope/vim-fugitive' }
+    use 'tpope/vim-fugitive'
 
     -- BufExplorer
-    use { 'jlanzarotta/bufexplorer' }
+    use 'jlanzarotta/bufexplorer'
 
     -- Zen Mode
-    use {"folke/zen-mode.nvim"}
+    use 'folke/zen-mode.nvim'
+
+    -- LSP and completions
+	use 'williamboman/nvim-lsp-installer'
+	use 'neovim/nvim-lspconfig'
+	use 'hrsh7th/nvim-cmp'
 
     -- NerdCommenter
     use 'scrooloose/nerdcommenter'
 
     -- Indent Blankline
-    use 'lukas-reineke/indent-blankline.nvim'
+	use 'lukas-reineke/indent-blankline.nvim'
 
     -- Ultisnips
     --use 'sirver/ultisnips'
