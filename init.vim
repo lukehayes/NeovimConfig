@@ -31,11 +31,7 @@ vim.g.mapleader = "'"
 -- Initialize Packer
 -- 
 require("plugin-init")
-
--- Options
--- 
-require("core.options")
-require("core.mappings")
+require("nvim-lsp-installer").setup()
 
 -- Plugin Settings
 -- 
@@ -43,6 +39,13 @@ require("plugins.nvim-tree")
 require("plugins.zen-mode")
 require("plugins.indent-blankline")
 require("plugins.telescope")
+
+-- Options
+-- 
+require("core.options")
+require("core.mappings")
+require("lsp")
+
 
 -- Set Python path explicitly for ultisnips - saves having to install neovim through pip
 -- or having to build neovim with Python support.
