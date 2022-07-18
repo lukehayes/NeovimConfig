@@ -57,6 +57,9 @@ return require('packer').startup(function()
     -- Indent Blankline
 	use 'lukas-reineke/indent-blankline.nvim'
 
+    -- Emmet
+	use 'mattn/emmet-vim'
+
     -- Ultisnips
     --use 'sirver/ultisnips'
 end)
