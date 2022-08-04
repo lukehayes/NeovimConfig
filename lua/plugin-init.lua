@@ -10,17 +10,30 @@ return require('packer').startup(function()
     -- Nightfox 
     use 'EdenEast/nightfox.nvim'
 
-    -- Catppuccin 
-    use({
-        'catppuccin/nvim',
-        as = 'catppuccin'
-    })
+	-- TokyoNight
+	use 'folke/tokyonight.nvim'
 
     -- Gotham
 	use 'whatyouhide/vim-gotham'
 
     -- Gruvbox
 	use 'gruvbox-community/gruvbox'
+
+    -- Catppuccin 
+    use({
+        'catppuccin/nvim',
+        as = 'catppuccin'
+    })
+
+    -- Rose pine 
+	use({
+		'rose-pine/neovim',
+		as = 'rose-pine',
+		tag = 'v1.*',
+		config = function()
+			vim.cmd('colorscheme rose-pine')
+		end
+	})
 
 
 	-- Functionality	
