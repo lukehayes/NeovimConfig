@@ -5,7 +5,7 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
-	-- Colorschemes	
+	-- Colorschemes	-----------------------
 	-- 
     -- Nightfox 
     use 'EdenEast/nightfox.nvim'
@@ -35,8 +35,7 @@ return require('packer').startup(function()
 		end
 	})
 
-
-	-- Functionality	
+	-- Functionality	-----------------------
 	-- 
     -- Nvim Tree
     use 'kyazdani42/nvim-tree.lua'
