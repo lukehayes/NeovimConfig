@@ -31,7 +31,7 @@ vim.g.mapleader = "'"
 -- Initialize Packer
 -- 
 require("plugin-init")
-require("nvim-lsp-installer").setup()
+--require("nvim-lsp-installer").setup()
 
 -- Plugin Settings
 -- 
