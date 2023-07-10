@@ -43,7 +43,7 @@ luac.out
 *.x86_64
 *.hex
 
-plugin/
+/plugin/
 
 
 # End of https://www.toptal.com/developers/gitignore/api/lua
