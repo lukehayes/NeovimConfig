@@ -4,18 +4,28 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	-- Packer can manage itself
+
+	-- Packer
+	-- 
 	use 'wbthomason/packer.nvim'
 
+	-- Telescope
+	-- 
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.2',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use {
-		"williamboman/mason.nvim",
-		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
-	}
+	-- Treesitter
+	-- 
+	use {'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}}
+
+	-- Colour Schemes
+	-- 
+       use { 'savq/melange-nvim' }
+       use { 'rose-pine/neovim'  }
+
 
 end)
+
