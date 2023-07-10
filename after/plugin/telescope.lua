@@ -5,8 +5,7 @@ require('telescope').setup {
     colorscheme = {
       enable_preview = true
     }
-  },
-  pickers.colorscheme.enable_preview = true
+  }
 }
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
