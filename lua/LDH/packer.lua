@@ -55,13 +55,16 @@ return require('packer').startup(function(use)
 	-- Cool Plugins
 	-- 
 
-	-- lualine (statusbar)
+	-- Lualine (statusbar)
 	-- 
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
 
+	-- Indent Blankline (indentation guides)
+	-- 
+	use { 'lukas-reineke/indent-blankline.nvim' }
 
 	use {
 		"nvim-neo-tree/neo-tree.nvim",
