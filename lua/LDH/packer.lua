@@ -90,6 +90,7 @@ return require('packer').startup(function(use)
 	use {'rakr/vim-two-firewatch'}
 	use {'liuchengxu/space-vim-dark'}
 	use {'TheNiteCoder/mountaineer.vim'}
+	use {'gilgigilgil/anderson.vim'}
 
 	use {
 		"kyazdani42/blue-moon",
