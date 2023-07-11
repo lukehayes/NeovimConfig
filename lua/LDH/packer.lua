@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
 	-----------------------------------------------------------------------
 	-- Base Necessary Setup
 	-- 
-	
+
 	-- Packer
 	-- 
 	use 'wbthomason/packer.nvim'
@@ -66,6 +66,7 @@ return require('packer').startup(function(use)
 	-- 
 	use { 'lukas-reineke/indent-blankline.nvim' }
 
+	-- Neotree (file explorer)
 	use {
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
@@ -81,6 +82,39 @@ return require('packer').startup(function(use)
 	-- 
 	use { 'savq/melange-nvim' }
 	use { 'rose-pine/neovim'  }
+	use {'wadackel/vim-dogrun'}
+	use {'NLKNguyen/papercolor-theme'}
+	use {'cocopon/iceberg.vim'}
+	use {'jaredgorski/fogbell.vim'}
+	use {'atelierbram/Base2Tone-nvim'}
+	use {'rakr/vim-two-firewatch'}
+	use {'liuchengxu/space-vim-dark'}
+	use {'TheNiteCoder/mountaineer.vim'}
+
+	use {
+		"kyazdani42/blue-moon",
+		config = function()
+			vim.opt.termguicolors = true
+		end
+	}
+
+	use({
+		'NTBBloodbath/doom-one.nvim',
+		setup = function()
+			-- Add color to cursor
+			vim.g.doom_one_cursor_coloring   = true
+			-- Set :terminal colors
+			vim.g.doom_one_terminal_colors   = true
+			-- Enable TS support
+			vim.g.doom_one_enable_treesitter = true
+
+			-- Plugins integration
+			vim.g.doom_one_plugin_telescope        = true
+			vim.g.doom_one_plugin_neogit           = true
+			vim.g.doom_one_plugin_dashboard        = true
+			vim.g.doom_one_plugin_indent_blankline = true
+		end
+	})
 
 end)
 
