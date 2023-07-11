@@ -72,7 +72,7 @@ return require('packer').startup(function(use)
 		branch = "v2.x",
 		requires = {
 			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"nvim-tree/nvim-web-desvicons", -- not strictly required, but recommended
 			"MunifTanjim/nui.nvim",
 		}
 	}
@@ -91,6 +91,7 @@ return require('packer').startup(function(use)
 	use {'liuchengxu/space-vim-dark'}
 	use {'TheNiteCoder/mountaineer.vim'}
 	use {'Shatur/neovim-ayu'}
+	use {'Badacadabra/vim-archery'}
 
 	use {'gilgigilgil/anderson.vim'}
 
