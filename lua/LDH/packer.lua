@@ -68,14 +68,22 @@ return require('packer').startup(function(use)
 
 	-- Neotree (file explorer)
 	use {
-		"nvim-neo-tree/neo-tree.nvim",
+		'nvim-neo-tree/neo-tree.nvim',
 		branch = "v2.x",
 		requires = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-desvicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
+			'nvim-lua/plenary.nvim',
+			'nvim-tree/nvim-web-desvicons', -- not strictly required, but recommended
+			'MunifTanjim/nui.nvim',
 		}
 	}
+	
+	-- Auto pairs (automatically close brackets, quotes etc)
+    use {'jiangmiao/auto-pairs'}
+
+	-- Vim surround (cool surround helpers for quotes etc)
+     use {'tpope/vim-surround'}
+	
+
 
 	-----------------------------------------------------------------------
 	-- Colour Schemes
