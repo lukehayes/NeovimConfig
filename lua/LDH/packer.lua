@@ -80,20 +80,25 @@ return require('packer').startup(function(use)
 	-----------------------------------------------------------------------
 	-- Colour Schemes
 	-- 
-	use { 'savq/melange-nvim' }
-	use { 'rose-pine/neovim'  }
-	use {'wadackel/vim-dogrun'}
-	use {'NLKNguyen/papercolor-theme'}
-	use {'cocopon/iceberg.vim'}
-	use {'jaredgorski/fogbell.vim'}
-	use {'atelierbram/Base2Tone-nvim'}
-	use {'rakr/vim-two-firewatch'}
-	use {'liuchengxu/space-vim-dark'}
-	use {'TheNiteCoder/mountaineer.vim'}
-	use {'Shatur/neovim-ayu'}
-	use {'Badacadabra/vim-archery'}
+	use { 'savq/melange-nvim'            }
+	use { 'rose-pine/neovim'             }
+	use { 'wadackel/vim-dogrun'          }
+	use { 'NLKNguyen/papercolor-theme'   }
+	use { 'cocopon/iceberg.vim'          }
+	use { 'jaredgorski/fogbell.vim'      }
+	use { 'atelierbram/Base2Tone-nvim'   }
+	use { 'rakr/vim-two-firewatch'       }
+	use { 'liuchengxu/space-vim-dark'    }
+	use { 'TheNiteCoder/mountaineer.vim' }
+	use { 'Shatur/neovim-ayu'            }
+	use { 'Badacadabra/vim-archery'      }
+	use { 'gilgigilgil/anderson.vim'     }
+	use { 'oxfist/night-owl.nvim'        }
+	use { 'sainnhe/gruvbox-material'     }
+	use { 'sainnhe/sonokai'              }
+	use { 'sainnhe/everforest'           }
+	use { 'sainnhe/edge'                 }
 
-	use {'gilgigilgil/anderson.vim'}
 
 	use {
 		"kyazdani42/blue-moon",
