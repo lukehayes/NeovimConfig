@@ -86,10 +86,13 @@ return require('packer').startup(function(use)
 	--
     use {'tpope/vim-surround'}
 
-
 	-- Zen Mode (distraction free mode)
 	--
 	use { "folke/zen-mode.nvim" }
+
+	-- Vim BuJo (todo list)
+	--
+	use { 'vuciv/vim-bujo' }
 
 
 	-----------------------------------------------------------------------
@@ -139,6 +142,9 @@ return require('packer').startup(function(use)
 			vim.g.doom_one_plugin_indent_blankline = true
 		end
 	})
+
+
+
 
 end)
 
