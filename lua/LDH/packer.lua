@@ -67,6 +67,7 @@ return require('packer').startup(function(use)
 	use { 'lukas-reineke/indent-blankline.nvim' }
 
 	-- Neotree (file explorer)
+	--
 	use {
 		'nvim-neo-tree/neo-tree.nvim',
 		branch = "v2.x",
@@ -78,11 +79,17 @@ return require('packer').startup(function(use)
 	}
 	
 	-- Auto pairs (automatically close brackets, quotes etc)
+	--
     use {'jiangmiao/auto-pairs'}
 
 	-- Vim surround (cool surround helpers for quotes etc)
-     use {'tpope/vim-surround'}
-	
+	--
+    use {'tpope/vim-surround'}
+
+
+	-- Zen Mode (distraction free mode)
+	--
+	use { "folke/zen-mode.nvim" }
 
 
 	-----------------------------------------------------------------------
