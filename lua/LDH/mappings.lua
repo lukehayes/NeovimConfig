@@ -27,3 +27,6 @@ map('n', '<C-k>', '<C-w>k', {noremap = true})
 map('n', '<leader>c', '<C-w>c', {noremap = true})
 map('n', '<leader>bd', ':bdelete<CR>', {noremap = true})
 
+local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
+vim.keymap.set("i", "<TAB>", 'pumvisible() ? "<C-n>" : "<TAB>"', opts)
+--vim.keymap.set("i", "<S-TAB>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
