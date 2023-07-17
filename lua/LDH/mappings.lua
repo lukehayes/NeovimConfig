@@ -17,6 +17,7 @@ vim.go.termguicolors  = true
 
 -- Key remaps
 --
+vim.keymap.set("n", "<leader>z", ':ZenMode<CR>')
 
 local map = vim.api.nvim_set_keymap
 map('n', '<C-l>', '<C-w>l', {noremap = true})
