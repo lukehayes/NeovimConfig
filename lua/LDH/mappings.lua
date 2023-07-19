@@ -15,7 +15,7 @@ map('n', '<C-k>', '<C-w>k', opt)
 -- Window Closing
 map('n', '<leader>c', '<C-w>c', opt)
 map('n', '<leader>bd', ':bdelete<CR>', opt)
-map('n', '<leader>ba', ':bufdo bd', opt) -- Close all buffers
+map('n', '<leader>ba', ':%bd<CR>', opt) -- Close all buffers
 
 -- Disbale Highlight
 map('n', '<leader>h', ':noh<CR>', opt)
