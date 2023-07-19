@@ -94,7 +94,7 @@ return require('packer').startup(function(use)
 	--
 	use { 'vuciv/vim-bujo' }
 
-
+    use { 'preservim/nerdcommenter' }
 	-----------------------------------------------------------------------
 	-- Colour Schemes
 	-- 
