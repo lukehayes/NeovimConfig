@@ -3,6 +3,8 @@
 --
 vim.keymap.set("n", "<leader>z", ':ZenMode<CR>')
 
+
+
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true}
 
@@ -19,6 +21,9 @@ map('n', '<leader>ba', ':%bd<CR>', opt) -- Close all buffers
 
 -- Disbale Highlight
 map('n', '<leader>h', ':noh<CR>', opt)
+
+-- Haxe quality of life mapping until I find a solution.
+vim.keymap.set("n", "<leader>zx", ':se ft=cpp<CR> :LspStop<CR>')
 
 local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
 vim.keymap.set("i", "<TAB>", 'pumvisible() ? "<C-n>" : "<TAB>"', opts)
