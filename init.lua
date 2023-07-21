@@ -206,6 +206,14 @@ require('lazy').setup({
   -- { import = 'custom.plugins' },
 }, {})
 
+-- [[ Tell nvim about haxe extension/filetype.]]
+--
+vim.filetype.add({
+  extension = {
+    hx = 'haxe',
+  },
+})
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
@@ -510,7 +518,5 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
-
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
-
