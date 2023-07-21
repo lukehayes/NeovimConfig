@@ -206,14 +206,6 @@ require('lazy').setup({
   -- { import = 'custom.plugins' },
 }, {})
 
--- [[ Tell nvim about haxe extension/filetype.]]
---
-vim.filetype.add({
-  extension = {
-    hx = 'haxe',
-  },
-})
-
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
@@ -378,6 +370,29 @@ require('nvim-treesitter.configs').setup {
     },
   },
 }
+
+-- Configure tree-sitter for Haxe.
+--
+-- See: https://github.com/vantreeseba/tree-sitter-haxe
+--
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.haxe = {
+  install_info = {
+    url = "https://github.com/vantreeseba/tree-sitter-haxe",
+    files = {"src/parser.c"},
+    -- optional entries:
+    branch = "main",
+  },
+  filetype = "haxe",
+}
+
+-- [[ Tell nvim about haxe extension/filetype.]]
+--
+vim.filetype.add({
+  extension = {
+    hx = 'haxe',
+  },
+})
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
