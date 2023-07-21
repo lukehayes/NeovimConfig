@@ -57,6 +57,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
 -- NOTE: Here is where you install your plugins.
 --  You can configure plugins using the `config` key.
 --
@@ -191,11 +192,45 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
+  -- [[My specific plugins]]
+  --
   -- Color schemes
   --
  {'aktersnurra/no-clown-fiesta.nvim'},
  {'EdenEast/nightfox.nvim'},
 
+
+	-- Auto pairs (automatically close brackets, quotes etc)
+	--
+    {'jiangmiao/auto-pairs'},
+
+	-- Vim surround (cool surround helpers for quotes etc)
+	--
+    {'tpope/vim-surround'},
+
+	-- Zen Mode (distraction free mode)
+	--
+	{ "folke/zen-mode.nvim" },
+
+	-- Nerd Commenter
+	--
+{ 'preservim/nerdcommenter'},
+
+	-- Neotree (file explorer)
+	--
+	{
+		'nvim-neo-tree/neo-tree.nvim',
+		dependencies = {
+			'nvim-lua/plenary.nvim',
+			'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+      'MunifTanjim/nui.nvim',
+		},
+    keys = {
+      {"n", "<leader>ee", ":NeotreeToggle<CR>", { silent = true }}
+    }
+	}
+
+  --
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
@@ -208,7 +243,7 @@ require('lazy').setup({
   --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-  -- { import = 'custom.plugins' },
+  --   { import = 'custom.plugins' },
 }, {})
 
 -- [[ Setting options ]]
@@ -246,8 +281,8 @@ vim.o.smartcase = true
 vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
-vim.o.updatetime = 250
-vim.o.timeoutlen = 300
+-- vim.o.updatetime = 250
+-- vim.o.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
