@@ -208,26 +208,9 @@ require('lazy').setup({
 	--
     {'tpope/vim-surround'},
 
-	-- Zen Mode (distraction free mode)
-	--
-	{ "folke/zen-mode.nvim" },
-
 	-- Nerd Commenter
 	--
   { 'preservim/nerdcommenter'},
-
-	-- Neotree (file explorer)
-	--
-  {
-      "nvim-neo-tree/neo-tree.nvim",
-      branch = "v3.x",
-      dependencies = {
-        "nvim-lua/plenary.nvim",
-        "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-        "MunifTanjim/nui.nvim",
-      }
-  }
-
 
   --
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
@@ -242,7 +225,7 @@ require('lazy').setup({
   --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-  --   { import = 'custom.plugins' },
+     { import = 'custom.plugins' },
 }, {})
 
 -- [[ Setting options ]]
@@ -442,7 +425,7 @@ vim.filetype.add({
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+-- vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' }) // DISABLE FOR NEOTREE
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- [[ Configure LSP ]]
