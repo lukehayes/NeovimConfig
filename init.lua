@@ -218,17 +218,16 @@ require('lazy').setup({
 
 	-- Neotree (file explorer)
 	--
-	{
-		'nvim-neo-tree/neo-tree.nvim',
-		dependencies = {
-			'nvim-lua/plenary.nvim',
-			'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
-      'MunifTanjim/nui.nvim',
-		},
-    keys = {
-      {"n", "<leader>ee", ":NeotreeToggle<CR>", { silent = true }}
-    }
-	}
+  {
+      "nvim-neo-tree/neo-tree.nvim",
+      branch = "v3.x",
+      dependencies = {
+        "nvim-lua/plenary.nvim",
+        "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+        "MunifTanjim/nui.nvim",
+      }
+  }
+
 
   --
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
