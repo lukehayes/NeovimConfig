@@ -214,7 +214,7 @@ require('lazy').setup({
 
 	-- Nerd Commenter
 	--
-{ 'preservim/nerdcommenter'},
+  { 'preservim/nerdcommenter'},
 
 	-- Neotree (file explorer)
 	--
