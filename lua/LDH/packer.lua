@@ -94,7 +94,14 @@ return require('packer').startup(function(use)
 	--
 	use { 'vuciv/vim-bujo' }
 
+	-- Nerd Commenter
+	--
     use { 'preservim/nerdcommenter' }
+
+	-- Multiple Cursors
+	--
+    use { 'terryma/vim-multiple-cursors'}
+
 	-----------------------------------------------------------------------
 	-- Colour Schemes
 	-- 
@@ -142,9 +149,5 @@ return require('packer').startup(function(use)
 			vim.g.doom_one_plugin_indent_blankline = true
 		end
 	})
-
-
-
-
 end)
 
