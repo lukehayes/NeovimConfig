@@ -244,7 +244,6 @@ return {
       })
 
       vim.cmd([[nnoremap \ :Neotree toggle=true position=left<cr>]])
-
-      vim.keymap.set('n', '<leader>ee', ':Neotree toggle=true position=float<CR>', { silent = true })
+      vim.keymap.set('n', '<leader>e', ':Neotree toggle=true position=float<CR>', { silent = true })
     end
 }
