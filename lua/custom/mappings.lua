@@ -1,4 +1,3 @@
-
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true}
 
@@ -15,3 +14,7 @@ map('n', '<C-k>', '<C-w>k', opt)
 map('n', '<leader>c', '<C-w>c', opt)
 map('n', '<leader>bd', ':bdelete<CR>', opt)
 map('n', '<leader>ba', ':%bd<CR>', opt) -- Close all buffers
+
+-- Telescope
+map('n', '<leader>t', ':Telescope<CR>', opt)
+

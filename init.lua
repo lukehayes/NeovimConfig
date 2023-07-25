@@ -232,14 +232,8 @@ require('lazy').setup({
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
--- Set highlight on search
-vim.o.hlsearch = true
-
 -- Make line numbers default
 vim.wo.number = true
-
--- Turn on relative numbers
-vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -271,9 +265,6 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
-
--- Turn on the currsor line highlight
-vim.o.cursorline = true
 
 -- [[ Basic Keymaps ]]
 
@@ -573,6 +564,7 @@ cmp.setup {
 }
 
 require 'custom.mappings'
+require 'custom.options'
 
 
 
