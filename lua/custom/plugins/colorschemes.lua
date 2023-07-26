@@ -8,7 +8,7 @@ return  {
   'NLKNguyen/papercolor-theme',
   'cocopon/iceberg.vim',
   'jaredgorski/fogbell.vim',
-  'atelierbram/Base2Tone-nvim',
+  'lukehayes/LDH-Base2Tone-nvim',
   'rakr/vim-two-firewatch',
   'liuchengxu/space-vim-dark',
   'TheNiteCoder/mountaineer.vim',
