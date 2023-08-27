@@ -202,15 +202,19 @@ require('lazy').setup({
 
 	-- Auto pairs (automatically close brackets, quotes etc)
 	--
-    {'jiangmiao/auto-pairs'},
+  {'jiangmiao/auto-pairs'},
 
 	-- Vim surround (cool surround helpers for quotes etc)
 	--
-    {'tpope/vim-surround'},
+  {'tpope/vim-surround'},
 
 	-- Nerd Commenter
 	--
   { 'preservim/nerdcommenter'},
+
+	-- Multiple Cursors.
+	--
+  {'mg979/vim-visual-multi'},
 
   --
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
