@@ -24,6 +24,10 @@ return  {
     'xero/miasma.nvim',
     'sigmavim/kyotonight',
 
+    "d00h/nvim-rusticated",
+    "projekt0n/github-nvim-theme",
+    "overcache/NeoSolarized",
+
     {
         "kyazdani42/blue-moon",
         config = function()
