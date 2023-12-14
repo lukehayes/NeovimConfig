@@ -23,6 +23,10 @@ return  {
     'rockerBOO/boo-colorscheme-nvim',
     'xero/miasma.nvim',
     'sigmavim/kyotonight',
+    'AhmedAbdulrahman/aylin',
+    'Biscuit-Colorscheme/biscuit',
+    'lighthaus-theme/vim-lighthaus',
+
 
     "d00h/nvim-rusticated",
     "projekt0n/github-nvim-theme",
