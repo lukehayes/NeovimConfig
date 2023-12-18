@@ -15,6 +15,10 @@ map('n', '<leader>c', '<C-w>c', opt)
 map('n', '<leader>bd', ':bdelete<CR>', opt)
 map('n', '<leader>ba', ':%bd<CR>', opt) -- Close all buffers
 
+-- Buffer Navigation
+map('n', '<S-h>', ':bn<CR>', opt)
+map('n', '<S-l>', ':bp<CR>', opt)
+
 -- Telescope
 map('n', '<leader>t', ':Telescope<CR>', opt)
 
