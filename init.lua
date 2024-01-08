@@ -216,6 +216,8 @@ require('lazy').setup({
 	--
   {'mg979/vim-visual-multi'},
 
+  {'mattn/emmet-vim'},
+
   --
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
