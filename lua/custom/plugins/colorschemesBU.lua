@@ -27,6 +27,7 @@ return  {
     'Biscuit-Colorscheme/biscuit',
     'lighthaus-theme/vim-lighthaus',
 
+
     "d00h/nvim-rusticated",
     "projekt0n/github-nvim-theme",
     "overcache/NeoSolarized",
@@ -36,30 +37,5 @@ return  {
         config = function()
             vim.opt.termguicolors = true
         end
-    }, {
-
-
-    "scottmckendry/cyberdream.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require("cyberdream").setup({
-            -- Recommended - see "Configuring" below for more config options
-            transparent = true,
-            italic_comments = true,
-            hide_fillchars = true,
-            borderless_telescope = true,
-        })
-        vim.cmd("colorscheme cyberdream") -- set the colorscheme
-    end,
-    },
-
-    {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require 'nordic' .load()
-    end
-    },
+    }
 }
