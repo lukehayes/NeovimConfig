@@ -7,17 +7,17 @@
 Kickstart.nvim is *not* a distribution.
 
 Kickstart.nvim is a template for your own configuration.
-  The goal is that you can read every line of code, top-to-bottom, understand
-  what your configuration is doing, and modify it to suit your needs.
+The goal is that you can read every line of code, top-to-bottom, understand
+what your configuration is doing, and modify it to suit your needs.
 
-  Once you've done that, you should start exploring, configuring and tinkering to
-  explore Neovim!
+Once you've done that, you should start exploring, configuring and tinkering to
+explore Neovim!
 
-  If you don't know anything about Lua, I recommend taking some time to read through
-  a guide. One possible example:
-  - https://learnxinyminutes.com/docs/lua/
+If you don't know anything about Lua, I recommend taking some time to read through
+a guide. One possible example:
+- https://learnxinyminutes.com/docs/lua/
 
-  And then you can explore or search through `:help lua-guide`
+And then you can explore or search through `:help lua-guide`
 
 
 Kickstart Guide:
@@ -196,27 +196,39 @@ require('lazy').setup({
   --
   -- Color schemes
   --
- {'aktersnurra/no-clown-fiesta.nvim'},
- {'EdenEast/nightfox.nvim'},
+  {'aktersnurra/no-clown-fiesta.nvim'},
+  {'EdenEast/nightfox.nvim'},
 
 
-	-- Auto pairs (automatically close brackets, quotes etc)
-	--
+  -- Auto pairs (automatically close brackets, quotes etc)
+  --
   {'jiangmiao/auto-pairs'},
 
-	-- Vim surround (cool surround helpers for quotes etc)
-	--
+  -- Vim surround (cool surround helpers for quotes etc)
+  --
   {'tpope/vim-surround'},
 
-	-- Nerd Commenter
-	--
+  -- Nerd Commenter
+  --
   { 'preservim/nerdcommenter'},
 
-	-- Multiple Cursors.
-	--
+  -- Multiple Cursors
+  --
   {'mg979/vim-visual-multi'},
 
+  -- Emmet
+  --
   {'mattn/emmet-vim'},
+
+  -- Snippets
+  --
+
+  -- Telescope luasnip - extension for showing snippets
+  --
+  {
+    "benfowler/telescope-luasnip.nvim",
+    module = "telescope._extensions.luasnip",  -- if you wish to lazy-load
+  },
 
   --
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
@@ -231,7 +243,7 @@ require('lazy').setup({
   --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-     { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
 }, {})
 
 -- [[ Setting options ]]
@@ -316,6 +328,7 @@ require('telescope').setup {
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
+pcall(require('telescope').load_extension('luasnip'))
 
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
