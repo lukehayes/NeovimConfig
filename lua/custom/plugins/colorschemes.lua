@@ -30,6 +30,8 @@ return  {
     "d00h/nvim-rusticated",
     "projekt0n/github-nvim-theme",
     "overcache/NeoSolarized",
+    "techtuner/aura-neovim",
+    "miikanissi/modus-themes.nvim",
 
     {
         "kyazdani42/blue-moon",
@@ -62,4 +64,5 @@ return  {
         require 'nordic' .load()
     end
     },
+
 }
