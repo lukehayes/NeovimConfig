@@ -231,6 +231,12 @@ require('lazy').setup({
     module = "telescope._extensions.luasnip",  -- if you wish to lazy-load
   },
 
+  -- Odin
+  --
+  {
+    "Tetralux/odin.vim"
+  },
+
   --
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
