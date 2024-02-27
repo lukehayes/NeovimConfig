@@ -538,6 +538,11 @@ mason_lspconfig.setup_handlers {
       on_attach = on_attach,
       settings = servers[server_name],
     }
+
+
+    --Not sure if I need this here yet so keeping it disabled for now.
+    -- require('lspconfig').ols.setup({})
+
   end,
 }
 
