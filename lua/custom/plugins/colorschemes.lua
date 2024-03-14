@@ -26,6 +26,7 @@ return  {
     'AhmedAbdulrahman/aylin',
     'Biscuit-Colorscheme/biscuit',
     'lighthaus-theme/vim-lighthaus',
+    'ellisonleao/gruvbox.nvim',
 
     "d00h/nvim-rusticated",
     "projekt0n/github-nvim-theme",
