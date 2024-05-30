@@ -28,6 +28,7 @@ return  {
     'lighthaus-theme/vim-lighthaus',
     'ellisonleao/gruvbox.nvim',
 
+    "aperezdc/vim-elrond",
     "d00h/nvim-rusticated",
     "projekt0n/github-nvim-theme",
     "overcache/NeoSolarized",
