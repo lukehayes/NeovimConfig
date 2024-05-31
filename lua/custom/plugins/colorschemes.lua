@@ -27,6 +27,8 @@ return  {
     'Biscuit-Colorscheme/biscuit',
     'lighthaus-theme/vim-lighthaus',
     'ellisonleao/gruvbox.nvim',
+    'catppuccin/nvim',
+    'yazeed1s/oh-lucy.nvim',
 
     "aperezdc/vim-elrond",
     "d00h/nvim-rusticated",
