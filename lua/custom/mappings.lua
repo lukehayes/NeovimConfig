@@ -5,10 +5,13 @@ local opt = {noremap = true}
 -- vim.keymap.set('n', '<leader>as', require('telescope.builtin').colorscheme, { desc = '[?] Find recently opened files' })
 
 -- Window Movement
-map('n', '<C-l>', '<C-w>l', opt)
-map('n', '<C-h>', '<C-w>h', opt)
-map('n', '<C-j>', '<C-w>j', opt)
-map('n', '<C-k>', '<C-w>k', opt)
+map('n', '<leader>wl', '<C-w>l', opt)
+map('n', '<leader>wh', '<C-w>h', opt)
+map('n', '<leader>wj', '<C-w>j', opt)
+map('n', '<leader>wk', '<C-w>k', opt)
+
+map('n', '<leader>wv', '<C-w>v', opt)
+map('n', '<leader>ws', '<C-w>s', opt)
 
 -- Window Closing
 map('n', '<leader>c', '<C-w>c', opt)
