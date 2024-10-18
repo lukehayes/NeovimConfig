@@ -36,6 +36,8 @@ return  {
     "overcache/NeoSolarized",
     "techtuner/aura-neovim",
     "miikanissi/modus-themes.nvim",
+    "aliqyan-21/darkvoid.nvim",
+    "blazkowolf/gruber-darker.nvim",
 
     {
         "kyazdani42/blue-moon",
