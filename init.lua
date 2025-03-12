@@ -349,7 +349,7 @@ vim.keymap.set('n', '<leader>/', function()
 end, { desc = '[/] Fuzzily search in current buffer' })
 
 vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files,   { desc = 'Search [G]it [F]iles' })
-vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files,  { desc = '[F]ind [F]iles' })
+vim.keymap.set('n', '<leader><leader>', require('telescope.builtin').find_files,  { desc = '[F]ind [F]iles' })
 vim.keymap.set('n', '<leader>fb', require('telescope.builtin').buffers,     { desc = '[F]ind [B]uffers' })
 vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags,   { desc = '[F]ind [H]elp' })
 vim.keymap.set('n', '<leader>fw', require('telescope.builtin').grep_string, { desc = '[F]ind current [W]ord' })
@@ -597,6 +597,7 @@ cmp.setup {
 
 require 'custom.mappings'
 require 'custom.options'
+require 'custom.autocmds'
 
 
 
