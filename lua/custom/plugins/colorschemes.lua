@@ -32,13 +32,24 @@ return  {
 
     "aperezdc/vim-elrond",
     "d00h/nvim-rusticated",
-    "projekt0n/github-nvim-theme",
+    --"projekt0n/github-nvim-theme",
     "overcache/NeoSolarized",
     "techtuner/aura-neovim",
     "miikanissi/modus-themes.nvim",
     "aliqyan-21/darkvoid.nvim",
     "blazkowolf/gruber-darker.nvim",
+    "yorik1984/newpaper.nvim",
 
+    "w0ng/vim-hybrid",
+    "endel/vim-github-colorscheme",
+    "bdesham/biogoo",
+    --"vim-scripts/285colors-with-az-menu",
+    "habamax/vim-habamax",
+    "neko-night/nvim",
+    "sample-usr/rakis.nvim",
+    "cvigilv/patana.nvim",
+    "wolandark/NotePad-Vim",
+    "alexxGmZ/e-ink.nvim",
     {
         "kyazdani42/blue-moon",
         config = function()
