@@ -79,6 +79,24 @@ require('lazy').setup({
     -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
+      -- Putting this here fixes neko-night 'module not found error'.
+      {
+        -- Autocompletion
+        'hrsh7th/nvim-cmp',
+        dependencies = {
+          -- Snippet Engine & its associated nvim-cmp source
+          'L3MON4D3/LuaSnip',
+          'saadparwaiz1/cmp_luasnip',
+
+          -- Adds LSP completion capabilities
+          'hrsh7th/cmp-nvim-lsp',
+
+          -- Adds a number of user-friendly snippets
+          'rafamadriz/friendly-snippets',
+          --'honza/vim-snippets'
+        },
+      },
+
       -- Automatically install LSPs to stdpath for neovim
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
@@ -91,24 +109,6 @@ require('lazy').setup({
       'folke/neodev.nvim',
     },
   },
-
-  {
-    -- Autocompletion
-    'hrsh7th/nvim-cmp',
-    dependencies = {
-      -- Snippet Engine & its associated nvim-cmp source
-      'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip',
-
-      -- Adds LSP completion capabilities
-      'hrsh7th/cmp-nvim-lsp',
-
-      -- Adds a number of user-friendly snippets
-      'rafamadriz/friendly-snippets',
-      --'honza/vim-snippets'
-    },
-  },
-
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim', opts = {} },
   {
