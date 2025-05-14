@@ -82,4 +82,5 @@ return  {
     end
     },
 
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 }
