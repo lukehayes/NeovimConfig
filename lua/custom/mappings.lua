@@ -29,6 +29,4 @@ map("n", "<S-l>", ":bp<CR>", opt)
 -- Telescope
 map("n", "<leader>t", ":Telescope<CR>", { desc = "Open Telescope" })
 
-print("Mappings Loaded")
-
 return {}
