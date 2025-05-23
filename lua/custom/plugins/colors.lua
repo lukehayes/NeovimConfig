@@ -7,6 +7,7 @@ return  {
     "cvigilv/patana.nvim",
     "wolandark/NotePad-Vim",
     "alexxGmZ/e-ink.nvim",
+    "tinted-theming/tinted-vim",
 
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
