@@ -32,4 +32,7 @@ map("n", "<leader>cc", "gcc", { desc = "Comment line", noremap = false })
 -- Telescope
 map("n", "<leader>t", ":Telescope<CR>", { desc = "Open Telescope" })
 
+-- Open todo.md in the current project
+map("n", "<leader>ll", ":e " .. vim.fn.getcwd() .. "/todo.md<CR>", { desc = "Open todo.md" })
+
 return {}
