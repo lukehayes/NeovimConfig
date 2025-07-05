@@ -25,3 +25,5 @@ map('n', '<S-l>', ':bp<CR>', opt)
 -- Telescope
 map('n', '<leader>t', ':Telescope<CR>', opt)
 
+map('n', '<leader>ll', ':e'.. vim.fn.getcwd() .. '/todo.md<CR>', opt)
+
